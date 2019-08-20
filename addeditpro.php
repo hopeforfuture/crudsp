@@ -32,6 +32,15 @@ if($pro_id > 0)
 	/* This is for delete operation */
 	if(array_key_exists('op', $getinfo))
 	{
+		$status = '0';
+		$sql_product_del = 'CALL updateproductstatus(:pro_status,:pro_id)';
+		$stmt_del = $pdo->prepare($sql_product_del);
+		$stmt_del->bindParam(':pro_status', $status, PDO::PARAM_STR);
+		$stmt_del->bindParam(':pro_id', $pro_id, PDO::PARAM_INT);
+		$stmt_del->execute();
+		$stmt_del = null;
+		$_SESSION['flash'] = 'Product deleted successfully.';
+		header("Location:index.php");
 	}
 	/* End */
 	
