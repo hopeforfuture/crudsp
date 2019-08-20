@@ -54,9 +54,9 @@ $serial = 1;
 				<td><?php echo number_format($row->pro_unit_price); ?></td>
 				<td><img src="<?php echo $src ; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" /></td>
 				<td>
-					<a href="Javascript:void(0);" class="label label-warning">Edit</a>
-					<a target="_blank" href="Javascript:void(0);" class="label label-info">View</a>
-                    <a href="Javascript:void(0);" class="label label-danger" onclick="return confirm('Are you sure to delete?')">Delete</a>
+					<a href="addeditpro.php?pro_id=<?php echo base64_encode($row->pro_id); ?>" class="label label-warning">Edit</a>
+					<a target="_blank" href="viewpro.php?pro_id=<?php echo base64_encode($row->pro_id); ?>" class="label label-info">View</a>
+                    <a href="addeditpro.php?pro_id=<?php echo base64_encode($row->pro_id); ?>&op=del" class="label label-danger" onclick="return confirm('Are you sure to delete?')">Delete</a>
 				</td>
 			</tr>
 		  <?php
