@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 19, 2019 at 12:39 PM
+-- Generation Time: Aug 30, 2019 at 04:45 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -197,12 +197,13 @@ CREATE TABLE `tblproducts` (
 --
 
 INSERT INTO `tblproducts` (`pro_id`, `pro_name`, `pro_code`, `pro_details`, `pro_manufac`, `pro_cat_id`, `pro_unit_price`, `pro_img`, `pro_img_thumb`, `pro_weight`, `pro_weight_unit`, `pro_stock`, `is_active`, `created_at`, `updated_at`) VALUES
-(2, 'Samsung Galaxy J5', 'SAMJ5', '<p>This is a useful <strong>smartphone</strong>.</p>', 'Samsung', 1, '9200.00', '810823.jpg', '810823_thumb.jpg', '10.50', 'gms', 12, '1', '2019-08-19 09:51:03', '2019-08-19 13:21:03'),
-(3, 'Samsung Galaxy J7', 'SAMJ7', '<p>A highend smartphone.</p>', 'Samsung', 1, '11200.00', '261644.jpg', '261644_thumb.jpg', '10.50', 'gms', 5, '1', '2019-08-19 10:24:47', '2019-08-19 13:54:47'),
-(4, 'Vivo Smartphone', 'VIV0907', '<p>A smartphone from vivo.</p>', 'Vivo', 1, '11000.00', '644802.jpg', '644802_thumb.jpg', '9.57', 'gms', 6, '1', '2019-08-19 10:29:53', '2019-08-19 13:59:53'),
+(2, 'Samsung Galaxy J5', 'SAMJ5', '<p>This is a useful <strong>smartphone</strong>.</p>', 'Samsung', 1, '9200.00', '563443.jpg', '563443_thumb.jpg', '10.50', 'gms', 12, '1', '2019-08-19 09:51:03', '2019-08-30 08:13:22'),
+(3, 'Samsung Galaxy J7', 'SAMJ7', '<p>A highend smartphone.</p>', 'Samsung', 1, '11200.00', '196687.jpg', '196687_thumb.jpg', '10.50', 'gms', 5, '1', '2019-08-19 10:24:47', '2019-08-30 08:13:04'),
+(4, 'Vivo Smartphone', 'VIV0907', '<p>A smartphone from vivo.</p>', 'Vivo', 1, '11000.00', '91877.jpg', '91877_thumb.jpg', '9.57', 'gms', 6, '1', '2019-08-19 10:29:53', '2019-08-30 08:12:49'),
 (5, 'HP Laptop', 'HPL0087', '<p>A laptop for programmers.</p>', 'HP', 2, '32900.00', '', '', '15.56', 'gms', 8, '1', '2019-08-19 10:54:16', '2019-08-19 14:24:16'),
-(6, 'HP Laptop', 'HPLAP00312', '<p>An online rich-text editor is the interface for editing rich text within web browsers, which presents the user with a &quot;what-you-see-is-what-you-get&quot; editing area. The aim is to reduce the effort for users trying to express their formatting directly as valid HTML markup.</p>\r\n\r\n<p>An online rich-text editor is the <span style=\"color:#8e44ad\"><strong>interface</strong></span> for editing rich text within web browsers, which presents the user with a &quot;what-you-see-is-what-you-get&quot; editing area. The aim is to reduce the effort for users trying to express their formatting directly as <span style=\"color:#cc3300\">valid</span> HTML markup.</p>\r\n\r\n<p>An online rich-text editor is the interface for editing rich text within web browsers, which presents the user with a &quot;what-you-see-is-what-you-get&quot; editing area. The aim is to reduce the effort for users trying to express their formatting directly as valid HTML markup.</p>', 'HP', 2, '22000.00', '20289.jpg', '20289_thumb.jpg', '10.50', 'gms', 7, '1', '2019-08-19 11:35:11', '2019-08-19 15:05:11'),
-(7, 'Micromax Canvas', 'MICA67009', '<p>A micromax smartphone.</p>', 'Micromax', 1, '8500.00', '561708.jpg', '561708_thumb.jpg', '9.50', 'gms', 3, '1', '2019-08-19 12:27:17', '2019-08-19 15:57:17');
+(6, 'HP Laptop', 'HPLAP00312', '<p>An online rich-text editor is the interface for editing rich text within web browsers, which presents the user with a &quot;what-you-see-is-what-you-get&quot; editing area. The aim is to reduce the effort for users trying to express their formatting directly as valid HTML markup.</p>\r\n\r\n<p>An online rich-text editor is the <span style=\"color:#8e44ad\"><strong>interface</strong></span> for editing rich text within web browsers, which presents the user with a &quot;what-you-see-is-what-you-get&quot; editing area. The aim is to reduce the effort for users trying to express their formatting directly as <span style=\"color:#cc3300\">valid</span> HTML markup.</p>\r\n\r\n<p>An online rich-text editor is the interface for editing rich text within web browsers, which presents the user with a &quot;what-you-see-is-what-you-get&quot; editing area. The aim is to reduce the effort for users trying to express their formatting directly as valid HTML markup.</p>', 'HP', 2, '22000.00', '47602.jpg', '47602_thumb.jpg', '10.50', 'gms', 7, '1', '2019-08-19 11:35:11', '2019-08-30 08:12:38'),
+(7, 'Micromax Canvas', 'MICA67009', '<p>A micromax smartphone.</p>', 'Micromax', 1, '8500.00', '561708.jpg', '561708_thumb.jpg', '9.50', 'gms', 3, '1', '2019-08-19 12:27:17', '2019-08-19 15:57:17'),
+(8, 'Samsung Galaxy S5', 'SAMS009988', '<p>lorem ipsum is the dummy text.</p>', 'Samsung', 1, '11000.00', '365717.jpg', '365717_thumb.jpg', '2.00', 'gms', 7, '1', '2019-08-30 04:42:16', '2019-08-30 08:12:16');
 
 --
 -- Indexes for dumped tables
@@ -234,7 +235,7 @@ ALTER TABLE `tblcategories`
 -- AUTO_INCREMENT for table `tblproducts`
 --
 ALTER TABLE `tblproducts`
-  MODIFY `pro_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `pro_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
